@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>挂在教室墙上三十年的世界地图，为何一直在对我“说谎”？</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fashion-pink': '#eaddd7',
+                        'charcoal': '#333333',
+                    },
+                    fontFamily: {
+                        'display': ['"Noto Serif SC"', 'serif'],
+                        'body': ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f7f3f0; color: #333; }
+        .crop-mark { position: absolute; width: 30px; height: 30px; border: 2px solid #555; }
+        .top-left { top: 20px; left: 20px; border-right: none; border-bottom: none; }
+        .top-right { top: 20px; right: 20px; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: 20px; left: 20px; border-right: none; border-top: none; }
+        .bottom-right { bottom: 20px; right: 20px; border-left: none; border-top: none; }
+        .vertical-text-box { writing-mode: vertical-rl; text-orientation: upright; }
+    </style>
+</head>
+<body class="font-body text-charcoal p-8 md:p-16 min-h-screen relative overflow-x-hidden">
+
+    <!-- Crop Marks -->
+    <div class="crop-mark top-left"></div>
+    <div class="crop-mark top-right"></div>
+    <div class="crop-mark bottom-left"></div>
+    <div class="crop-mark bottom-right"></div>
+
+    <header class="max-w-5xl mx-auto flex flex-col items-center mb-24">
+        <div class="relative w-full max-w-2xl mb-12">
+            <img src='https://opal.google/board/blobs/b5e2717d-02fd-4707-8a4e-7a1111b06252' alt='main-subject' class="w-full h-auto object-cover shadow-2xl rounded-sm" />
+            <!-- Decorative elements -->
+            <div class="absolute -left-12 top-10 border border-charcoal p-3 bg-white rotate-[-5deg] text-xs font-bold">发布日期：2026-09-07</div>
+            <div class="absolute -right-12 bottom-10 border border-charcoal p-3 bg-white rotate-[5deg] text-xs font-bold">地理视界</div>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-display text-center leading-tight mb-8">
+            挂在教室墙上三十年的世界地图，<br/>为何一直在对我“说谎”？
+        </h1>
+
+        <div class="absolute right-4 top-20 hidden lg:block w-12 bg-white border border-charcoal p-4 shadow-lg vertical-text-box font-display text-sm tracking-widest">
+            视角｜深度｜觉醒
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-display border-b border-charcoal pb-2">NO.1 童年记忆</h2>
+                <p class="leading-relaxed">在新加坡这种终年湿热的岛屿上，教室里的天花板电风扇总是吱呀作响。那时候的我，唯一能让我神游物外的地方，就是讲台侧面那张被太阳晒得有些褪色的《世界政区图》。</p>
+            </div>
+            <div class="bg-white p-8 border border-charcoal shadow-sm">
+                <blockquote class="italic text-lg">“那张图，在教室墙上挂了三十年。它不仅仅是一张纸，它是一种视觉上的等级制度。”</blockquote>
+            </div>
+        </section>
+
+        <div class="mb-20">
+            <img src='https://opal.google/board/blobs/6ba82a5b-36f6-4034-9ae2-562cc5faa944' alt='map-analysis' class="w-full rounded-sm shadow-xl" />
+        </div>
+
+        <section class="space-y-12 mb-20">
+            <h2 class="text-3xl font-display">NO.2 墨卡托的“阳谋”</h2>
+            <p class="leading-relaxed text-lg">1569年，墨卡托为了航海发明了投影。但为了保住角度，他不得不牺牲面积。越往两极走，陆地的面积就被拉扯得越夸张。在墨卡托的笔下，格陵兰岛看起来和非洲一样大。但实际上，非洲可以装下整整14个格陵兰岛。</p>
+        </section>
+
+        <section class="bg-white p-12 border border-charcoal relative">
+            <h2 class="text-2xl font-display mb-6">NO.3 讲台上的革命</h2>
+            <p class="leading-relaxed text-lg">我走上讲台，当着几十个孩子的面，亲手撕下了那张挂在墙上、已经有些开裂的旧版墨卡托世界地图。我展开了一张全新的、基于“等面积投影”的世界地图。那是一种权力的重构，也是视觉的觉醒。</p>
+        </section>
+    </main>
+
+    <footer class="max-w-4xl mx-auto mt-32 pt-8 border-t border-charcoal flex justify-center">
+        <div class="text-center space-y-2">
+            <div class="text-xs tracking-widest uppercase">Research Series · Geography Perspective</div>
+            <div class="text-[10px] text-gray-500">● ✎ ●</div>
+        </div>
+    </footer>
+
+</body>
+</html>
